@@ -1,0 +1,31 @@
+---
+title: Lumosity
+date: 2015-09-05
+description: A reflection on my 4 month co-op placement at Zynga
+tags:
+  - Android
+---
+
+At Lumosity I worked on three projects:
+
+#### Japanese Launch
+
+I helped translate the strings in the app to Japanese and made small UI fixes in cases where the translation was 
+much longer than the original English text.
+
+#### Internal Build Finder
+
+We had a Quality Assurance team of testers who would test out various changes before merging them into master. 
+I created a Jenkins job that would go through all the branches, create builds for each of them and upload them to 
+Amazon S3. In the Lumosity application there was an employee-only debug menu, where I added a search feature.
+The testers could search by branch name and then download the latest build for that branch to their phone. This
+allowed testers to test out different features as developers worked on them.
+
+#### Automated Test Suite
+
+I built a suite of automated tests for the Lumosity application. I researched and evaluated different testing
+frameworks like Selenium, Robolectric and Espresso. Espresso was still in it's early days and most apps were
+using Robolectric. After playing around with the different frameworks I decided to build the full suite with
+Espresso as it was the easiest for me to learn. I wrote a bunch of different smoke tests for different features,
+which allowed the QA team to focus on new changes rather than making sure that existing functionality wasn't 
+broken. The QA team really liked me by the time I left.
